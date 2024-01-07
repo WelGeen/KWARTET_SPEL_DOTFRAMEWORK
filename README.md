@@ -12,7 +12,7 @@ Doelstellingen
 
  Projectteam
 - Product Owner: Chris Geene 
-- Reviewer: Peter Heck
+- Reviewer: Petra Heck
 
 Doelgroep
 Het kwartetspel is bedoeld voor studenten, docenten en professionals op het gebied van ICT en onderzoeksmethoden.
