@@ -1,0 +1,64 @@
+body{
+	font-family: Arial;
+}
+.container {
+    page-break-after: always;
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+.card {
+    width: 105mm;
+    height: 148.5mm;
+    display: inline-grid;
+}
+.content {
+    margin: auto;
+    width: 88mm;
+    height: 128mm;
+    border: 4mm solid #ccc;
+	overflow: hidden;
+}
+.categorie {
+    width: width;
+	font-size: 1.3em;
+	line-height: 1.2;
+	padding: 5mm; 
+	margin-bottom: 3mm;
+	text-transform: uppercase;
+	background-position: calc(100% - 2mm) center;
+	background-repeat: no-repeat;
+	background-size: 18mm;
+	
+	color: white;
+	letter-spacing: 1px;
+}
+.sub-categorie{
+	font-size: 0.5em;
+	font-style: italic;
+}
+.method {
+    width: 70mm;
+    /* font-size: 1.3em; */
+    /* line-height: 1.2; */
+    padding: 2mm 5mm 2mm 5mm;
+}
+.card-img {
+    height: 40mm;
+	display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+.library-col{background-color: hsl(78, 55%, 52%);}
+.field-col{background-color: hsl(174, 41%, 55%);}
+.lab-col{background-color: hsl(261, 78%, 70%);}
+.showroom-col{background-color: hsl(44, 93%, 66%);}
+.workshop-col{background-color: hsl(190, 82%, 45%);}
+.steps-col{background-color: hsl(337, 96%, 62%);}

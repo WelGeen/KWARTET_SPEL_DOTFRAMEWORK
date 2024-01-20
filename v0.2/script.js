@@ -28,26 +28,20 @@ function createContainers() {
 		containerDiv.className = 'container';
 		//console.log(i, containerDiv)
        
-	   var color = getRandomRGBColor(); //data[i].color;
-	   var catcolor = data[i].catcolor;
-	   //var catcolor = getRandomRGBColor();
 		for (var j = 0; j < data[i].kaarten.length; j++) {
 			var cardDiv = document.createElement('div');
 			cardDiv.className = 'card';
 			
-		// Content	
 			var contentDiv = document.createElement('div');
-			contentDiv.classList.add('content'); 
-			contentDiv.style.borderColor = catcolor;  
-			//contentDiv.classList.add(data[i].classname); 
+			contentDiv.className = 'content';
+			contentDiv.style.borderColor = data[i].color;
 			cardDiv.appendChild(contentDiv);
 			
-		// Categorie		
 			var Categorie = document.createElement('div');
 			Categorie.innerHTML = data[i].categorie;
 			Categorie.classList.add('categorie'); 
-			Categorie.style.backgroundColor = catcolor; 
-			//Categorie.style.backgroundImage = "url('"+image_root+data[i].logo+"')";
+			Categorie.style.backgroundColor = data[i].color;
+			Categorie.style.backgroundImage = "url('"+image_root+data[i].logo+"')";
 			
 			var SubCategorie = document.createElement('div');
 			SubCategorie.innerHTML = data[i].sub_categorie;
@@ -56,12 +50,6 @@ function createContainers() {
 			
 			contentDiv.appendChild(Categorie);
 			
-		// Icoon
-			var iconDiv = document.createElement('div');
-			iconDiv.classList.add('icon'); 
-			iconDiv.style.backgroundColor = data[i].color; 
-			iconDiv.style.backgroundImage = "url('"+image_root+data[i].logo+"')";
-			Categorie.appendChild(iconDiv);
 			
 			var cardImage = document.createElement('img');
 			cardImage.src = image_root + data[i].kaarten[j].image;
@@ -74,16 +62,7 @@ function createContainers() {
 				cardMethod.classList.add("method"); 
 				
 				if(data[i].kaarten[j].kaart == data[i].kaarten[k].kaart){
-					// Icoon
-					var iconDiv = document.createElement('div');
-					iconDiv.classList.add('icon-small'); 
-					iconDiv.style.backgroundColor = data[i].color; 
-					iconDiv.style.backgroundImage = "url('"+image_root+data[i].logo+"')";
-					cardMethod.appendChild(iconDiv);
-					
-					cardMethod.style.background = catcolor;
-					cardMethod.style.fontWeight  = "bold";
-					cardMethod.style.color  = "white";
+					cardMethod.style.background = data[i].color;
 				}			
 				contentDiv.appendChild(cardMethod);
 			}
@@ -92,20 +71,14 @@ function createContainers() {
 		} 
 		
         document.body.appendChild(containerDiv);
-
+		
+        
     }
 
     // Append the last container if it's not empty
     if (containerDiv.childNodes.length > 0) {
         document.body.appendChild(containerDiv);
     }
-}
-// Functie om een willekeurige RGB-kleur te genereren
-function getRandomRGBColor() {
-  var r = Math.floor(Math.random() * 256);
-  var g = Math.floor(Math.random() * 256);
-  var b = Math.floor(Math.random() * 256);
-  return "rgb(" + r + "," + g + "," + b + ")";
 }
 
 createContainers();

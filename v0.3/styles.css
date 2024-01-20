@@ -23,8 +23,7 @@ body{
 }
 
 .res-pat {
-    background: rgb(63, 2, 138);
-    border-color: rgb(63, 2, 138);
+    border: 4mm solid hsl(0, 0%, 63%);
 }
 .lib-1 {
     border: 4mm solid hsl(78, 55%, 52%);
@@ -56,37 +55,22 @@ body{
     width: 26mm;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 22mm;
+    background-size: 18mm;
     top: 14mm;
     left: 53mm;
     border: 3mm solid white;
 }
-.icon-small{
-	position: absolute;
-     border-radius: 12mm;
-    height: 6mm;
-    width: 6mm;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 4mm;
-    top: 2mm;
-    left: 1.5mm;
-    /* border: 0.2mm solid white;*/
-}
 .method {
-	position: relative;
     width: 88mm;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.2; 
     padding: 2mm 5mm 2mm 5mm;
-    padding-left: 10mm;
-	letter-spacing: 0.1mm;
-	
+	letter-spacing: 0.25mm;
 }
 .card-img {
     height: 45mm;
 	display: block;
-    margin-left: 5mm;
+    margin: auto;
 }
 
 

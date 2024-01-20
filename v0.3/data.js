@@ -5,8 +5,8 @@ var game = {
       "categorie": "Research patterns",
       "sub_categorie": "",
       "logo": "logo.svg",
-      "color": "rgb(208, 208, 208)",
-      "catcolor": "rgb(63, 2, 138)",
+      "color": "hsl(0, 0%, 63%)",
+      "classname": "res-pat",
       "kaarten": [
 		{
           "kaart": "Clarify focus and scope",
@@ -31,7 +31,7 @@ var game = {
       "sub_categorie": "Library",
       "logo": "icon-library-nobg.svg",
       "color": "hsl(78, 55%, 52%)",
-	  "catcolor": "rgb(70, 162, 94)",
+	  "classname": "lib-1",
       "kaarten": [
 		{
           "kaart": "Best good and bad practices",
@@ -56,7 +56,7 @@ var game = {
 	  "sub_categorie": "Library",
 	  "logo": "icon-library-nobg.svg",
       "color": "hsl(78, 55%, 52%)",
-	  "catcolor": "rgb(5, 100, 96)",
+	  "classname": "lib-2",
       "kaarten": [
 		{
           "kaart": "SWOT analysis",
@@ -83,7 +83,7 @@ var game = {
 	  "sub_categorie": "Field",
 	  "logo": "icon-field-nobg.svg",
       "color": "hsl(174, 41%, 55%)",
-	  "catcolor": "rgb(225, 8, 148)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Explore user requirements",
@@ -108,7 +108,7 @@ var game = {
 	  "sub_categorie": "Field",
 	  "logo": "icon-field-nobg.svg",
       "color": "hsl(174, 41%, 55%)",
-	  "catcolor": "rgb(89, 125, 248)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Domain modelling",
@@ -134,18 +134,18 @@ var game = {
 	  "sub_categorie": "Lab",
 	  "logo": "icon-lab-nobg.svg",
       "color": "hsl(261, 78%, 70%)",
-	  "catcolor": "rgb(124, 148, 49)",
+	  "classname": "res-pat",
       "kaarten": [
         {
-          "kaart": "Data quality check",
+          "kaart": "Data quality check (ML)",
           "image": "lab-data-quality-check-ml.webp"
         },
         {
-          "kaart": "Model evaluation",
+          "kaart": "Model evaluation (ML)",
           "image": "lab-model-evaluation-ml.png"
         },
         {
-          "kaart": "Model validation",
+          "kaart": "Model validation (ML)",
           "image": "lab-model-validation-ml.png"
         },
 		{
@@ -158,8 +158,8 @@ var game = {
       "categorie": "Software testing",
 	  "sub_categorie": "Lab",
 	  "logo": "icon-lab-nobg.svg",
-	  "color": "hsl(261, 78%, 70%)",
-	  "catcolor": "rgb(109, 157, 174)",
+      "color": "hsl(261, 78%, 70%)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Hardware validation",
@@ -184,7 +184,7 @@ var game = {
 	  "sub_categorie": "Lab",
 	  "logo": "icon-lab-nobg.svg",
       "color": "hsl(261, 78%, 70%)",
-	  "catcolor": "rgb(225, 77, 111)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Usability testing",
@@ -209,7 +209,7 @@ var game = {
 	  "sub_categorie": "Showroom",
 	  "logo": "icon-showroom-nobg.svg",
       "color": "hsl(44, 93%, 66%)",
-	  "catcolor": "rgb(125 107 11)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Benchmark test",
@@ -230,11 +230,11 @@ var game = {
       ]
     },
     {
-      "categorie": "Demonstrate",
+      "categorie": "present to stackholder",
 	  "sub_categorie": "Showroom",
 	  "logo": "icon-showroom-nobg.svg",
       "color": "hsl(44, 93%, 66%)",
-	  "catcolor": "rgb(179, 31, 27)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Pitch",
@@ -259,7 +259,7 @@ var game = {
 	  "sub_categorie": "Workshop",
 	  "logo": "icon-workshop-nobg.svg",
       "color": "hsl(190, 82%, 45%)",
-	  "catcolor": "rgb(24 47 59)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Brainstorm",
@@ -284,7 +284,7 @@ var game = {
 	  "sub_categorie": "Workshop",
 	  "logo": "icon-workshop-nobg.svg",
       "color": "hsl(190, 82%, 45%)",
-	  "catcolor": "rgb(60 103 175)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Decomposition",
@@ -305,11 +305,11 @@ var game = {
       ]
     },
     {
-      "categorie": "explore the Context",
+      "categorie": "Context exploration",
 	  "sub_categorie": "Workshop",
 	  "logo": "icon-workshop-nobg.svg",
       "color": "hsl(190, 82%, 45%)",
-	  "catcolor": "rgb(254, 131, 9)",
+	  "classname": "res-pat",
       "kaarten": [
 		{
           "kaart": "Multi-criteria decision making",
@@ -334,7 +334,7 @@ var game = {
 	  "sub_categorie": "Stepping Stones",
 	  "logo": "icon-stepping-stones-nobg.svg",
       "color": "hsl(337, 96%, 62%)",
-	  "catcolor": "rgb(157, 147, 12)",
+	  "classname": "res-pat",
       "kaarten": [
         {
           "kaart": "Business Model Canvas",
@@ -356,11 +356,11 @@ var game = {
       ]
     },
     {
-      "categorie": "to communicate",
+      "categorie": "present to stackholders",
 	  "sub_categorie": "Stepping Stones",
       "color": "hsl(337, 96%, 62%)",
 	  "logo": "icon-stepping-stones-nobg.svg",
-	  "catcolor": "rgb(27, 69, 136)",
+	  "classname": "res-pat",
       "kaarten": [
 		{
           "kaart": "Concept",

@@ -1,41 +1,14 @@
 var game = {
   "kwartetspel": [
-	//// Research pattern navigator ////	
-	{
-      "categorie": "Research patterns",
-      "sub_categorie": "",
-      "logo": "logo.svg",
-      "color": "rgb(208, 208, 208)",
-      "catcolor": "rgb(63, 2, 138)",
-      "kaarten": [
-		{
-          "kaart": "Clarify focus and scope",
-          "image": "clarify-focus-and-scope.webp"
-        },
-		{
-          "kaart": "Choosing fitting technology",
-          "image": "choose-fitting-technology.webp"
-        },
-		{
-          "kaart": "Solidify",
-          "image": "solidify.webp"
-        },
-		{
-          "kaart": "Realise as required",
-          "image": "realise-as-required.webp"
-        }
-      ]
-    }, /// aangepast Research patterns v1.0
     {
-      "categorie": "learn from experts",
-      "sub_categorie": "Library",
+      "categorie": "Library",
+      "sub_categorie": "to get an overview",
       "logo": "icon-library-nobg.svg",
       "color": "hsl(78, 55%, 52%)",
-	  "catcolor": "rgb(70, 162, 94)",
       "kaarten": [
 		{
-          "kaart": "Best good and bad practices",
-          "image": "lib-best-good-and-bad-practices.png"
+          "kaart": "SWOT analysis",
+          "image": "swot-analysis.webp"
         },
         {
           "kaart": "Community research",
@@ -52,17 +25,15 @@ var game = {
       ]
     },
     {
-      "categorie": "learn from the market",
-	  "sub_categorie": "Library",
+      "categorie": "Library",
+	  "sub_categorie": "Watch competitors",
 	  "logo": "icon-library-nobg.svg",
       "color": "hsl(78, 55%, 52%)",
-	  "catcolor": "rgb(5, 100, 96)",
       "kaarten": [
 		{
-          "kaart": "SWOT analysis",
-          "image": "swot-analysis.webp"
+          "kaart": "Best good and bad practices",
+          "image": "lib-best-good-and-bad-practices.png"
         },
-		
         {
           "kaart": "Available product analysis",
           "image": "available-product-analysis.webp"
@@ -76,14 +47,36 @@ var game = {
           "image": "lib-trend-analysis.png"
         }
       ]
-    },/// aangepast Library  v1.0
-
+    },
     {
-      "categorie": "Talk to Users",
-	  "sub_categorie": "Field",
+      "categorie": "Field",
+	  "sub_categorie": "to seek for relevance",
 	  "logo": "icon-field-nobg.svg",
       "color": "hsl(174, 41%, 55%)",
-	  "catcolor": "rgb(225, 8, 148)",
+      "kaarten": [
+        {
+          "kaart": "Document analysis",
+          "image": "document-analysis.webp"
+        },
+        {
+          "kaart": "Stakeholder analysis",
+          "image": "stakeholder-analysis.webp"
+        },
+        {
+          "kaart": "Problem analysis",
+          "image": "problem-analysis.webp"
+        },
+        {
+          "kaart": "Task analysis",
+          "image": "task-analysis.webp"
+        }
+      ]
+    },
+    {
+      "categorie": "Field",
+	  "sub_categorie": "to get an overview",
+	  "logo": "icon-field-nobg.svg",
+      "color": "hsl(174, 41%, 55%)",
       "kaarten": [
         {
           "kaart": "Explore user requirements",
@@ -104,12 +97,12 @@ var game = {
       ]
     },
     {
-      "categorie": "analyse",
-	  "sub_categorie": "Field",
+      "categorie": "Field",
+	  "sub_categorie": "in general",
 	  "logo": "icon-field-nobg.svg",
       "color": "hsl(174, 41%, 55%)",
-	  "catcolor": "rgb(89, 125, 248)",
       "kaarten": [
+		
         {
           "kaart": "Domain modelling",
           "image": "domain-modelling.webp"
@@ -119,8 +112,8 @@ var game = {
           "image": "field-card-sorting.png"
         },
         {
-          "kaart": "Document analysis",
-          "image": "document-analysis.webp"
+          "kaart": "Survey",
+          "image": "field-survey.png"
         },
         {
           "kaart": "Exploratory data analysis (ML)",
@@ -128,42 +121,59 @@ var game = {
         }
       ]
     },
-	/// aangepast Field  v1.0
     {
-      "categorie": "Testing Machine Learning",
-	  "sub_categorie": "Lab",
+      "categorie": "Lab",
+	  "sub_categorie": "to clarity",
 	  "logo": "icon-lab-nobg.svg",
       "color": "hsl(261, 78%, 70%)",
-	  "catcolor": "rgb(124, 148, 49)",
       "kaarten": [
         {
-          "kaart": "Data quality check",
-          "image": "lab-data-quality-check-ml.webp"
+          "kaart": "Hardware validation",
+          "image": "hardware-validation.webp"
         },
         {
-          "kaart": "Model evaluation",
-          "image": "lab-model-evaluation-ml.png"
+          "kaart": "Computer simulation",
+          "image": "computer-simulation.webp"
         },
         {
-          "kaart": "Model validation",
-          "image": "lab-model-validation-ml.png"
-        },
-		{
           "kaart": "Data analytics",
           "image": "lab-web-analytics.png"
         }
       ]
     },
     {
-      "categorie": "Software testing",
-	  "sub_categorie": "Lab",
+      "categorie": "Lab",
+	  "sub_categorie": "clarity for ML",
 	  "logo": "icon-lab-nobg.svg",
-	  "color": "hsl(261, 78%, 70%)",
-	  "catcolor": "rgb(109, 157, 174)",
+      "color": "hsl(261, 78%, 70%)",
       "kaarten": [
         {
-          "kaart": "Hardware validation",
-          "image": "hardware-validation.webp"
+          "kaart": "Data quality check (ML)",
+          "image": "lab-data-quality-check-ml.webp"
+        },
+        {
+          "kaart": "Model evaluation (ML)",
+          "image": "lab-model-evaluation-ml.png"
+        },
+        {
+          "kaart": "Model validation (ML)",
+          "image": "lab-model-validation-ml.png"
+        },
+        {
+          "kaart": "Joker (ML)",
+          "image": "joker.png"
+        }
+      ]
+    },
+    {
+      "categorie": "Lab",
+	  "sub_categorie": "for measurements",
+	  "logo": "icon-lab-nobg.svg",
+      "color": "hsl(261, 78%, 70%)",
+      "kaarten": [
+        {
+          "kaart": "Component test",
+          "image": "component-test.webp"
         },
         {
           "kaart": "Security test",
@@ -180,11 +190,10 @@ var game = {
       ]
     },
     {
-      "categorie": "User testen",
-	  "sub_categorie": "Lab",
+      "categorie": "Lab",
+	  "sub_categorie": "for the end-user",
 	  "logo": "icon-lab-nobg.svg",
       "color": "hsl(261, 78%, 70%)",
-	  "catcolor": "rgb(225, 77, 111)",
       "kaarten": [
         {
           "kaart": "Usability testing",
@@ -203,13 +212,12 @@ var game = {
           "image": "lab-thinking-aloud.png"
         }
       ]
-    },/// aangepast Lab  v1.0
+    },
     {
-      "categorie": "to be certain",
-	  "sub_categorie": "Showroom",
+      "categorie": "Showroom",
+	  "sub_categorie": "to be certain",
 	  "logo": "icon-showroom-nobg.svg",
       "color": "hsl(44, 93%, 66%)",
-	  "catcolor": "rgb(125 107 11)",
       "kaarten": [
         {
           "kaart": "Benchmark test",
@@ -230,11 +238,10 @@ var game = {
       ]
     },
     {
-      "categorie": "Demonstrate",
-	  "sub_categorie": "Showroom",
+      "categorie": "Showroom",
+	  "sub_categorie": "to be certain",
 	  "logo": "icon-showroom-nobg.svg",
       "color": "hsl(44, 93%, 66%)",
-	  "catcolor": "rgb(179, 31, 27)",
       "kaarten": [
         {
           "kaart": "Pitch",
@@ -253,19 +260,67 @@ var game = {
           "image": "show-heuristic-evaluation.png"
         }
       ]
-    },/// aangepast Showroom  v1.0
+    },
     {
-      "categorie": "Explore ideas",
-	  "sub_categorie": "Workshop",
+      "categorie": "Workshop",
+	  "sub_categorie": "Explore opportunities",
 	  "logo": "icon-workshop-nobg.svg",
       "color": "hsl(190, 82%, 45%)",
-	  "catcolor": "rgb(24 47 59)",
       "kaarten": [
         {
           "kaart": "Brainstorm",
           "image": "brainstorm.webp"
         },
 		{
+          "kaart": "Multi-criteria decision making",
+          "image": "multi-criteria-decision-making.webp"
+        },
+        {
+          "kaart": "Business case exploration",
+          "image": "business-case-exploration.webp"
+        },
+        {
+          "kaart": "Root cause analysis",
+          "image": "root-cause-analysis.webp"
+        }
+      ]
+    },
+    {
+      "categorie": "Workshop",
+	  "sub_categorie": "Seek for improvement",
+	  "logo": "icon-workshop-nobg.svg",
+      "color": "hsl(190, 82%, 45%)",
+      "kaarten": [
+        {
+          "kaart": "Decomposition",
+          "image": "decomposition.webp"
+        },
+        {
+          "kaart": "Gap analysis",
+          "image": "gap-analysis.webp"
+        },
+        {
+          "kaart": "Requirements prioritization",
+          "image": "requirements-prioritization.webp"
+        },
+        {
+          "kaart": "Code review",
+          "image": "code-review.webp"
+        }
+
+      ]
+    },
+    {
+      "categorie": "Workshop",
+	  "sub_categorie": "seek ways to innovate",
+	  "logo": "icon-workshop-nobg.svg",
+      "color": "hsl(190, 82%, 45%)",
+      "kaarten": [
+		{
+          "kaart": "IT architecture sketching",
+          "image": "it-architecture-sketching.webp"
+        },
+        {
           "kaart": "Prototyping",
           "image": "work-prototyping.png"
         },
@@ -280,61 +335,10 @@ var game = {
       ]
     },
     {
-      "categorie": "Design solutions",
-	  "sub_categorie": "Workshop",
-	  "logo": "icon-workshop-nobg.svg",
-      "color": "hsl(190, 82%, 45%)",
-	  "catcolor": "rgb(60 103 175)",
-      "kaarten": [
-        {
-          "kaart": "Decomposition",
-          "image": "decomposition.webp"
-        },
-        {
-          "kaart": "IT architecture sketching",
-          "image": "it-architecture-sketching.webp"
-        },
-		{
-          "kaart": "Requirements prioritization",
-          "image": "requirements-prioritization.webp"
-        },
-		{
-          "kaart": "Code review",
-          "image": "code-review.webp"
-        }
-      ]
-    },
-    {
-      "categorie": "explore the Context",
-	  "sub_categorie": "Workshop",
-	  "logo": "icon-workshop-nobg.svg",
-      "color": "hsl(190, 82%, 45%)",
-	  "catcolor": "rgb(254, 131, 9)",
-      "kaarten": [
-		{
-          "kaart": "Multi-criteria decision making",
-          "image": "multi-criteria-decision-making.webp"
-        },
-        {
-          "kaart": "Business case exploration",
-          "image": "business-case-exploration.webp"
-        },
-        {
-          "kaart": "Root cause analysis",
-          "image": "root-cause-analysis.webp"
-        },
-		{
-          "kaart": "Gap analysis",
-          "image": "gap-analysis.webp"
-        }
-      ]
-    },/// aangepast Workshop  v1.0
-    {
-      "categorie": "condense your insights",
-	  "sub_categorie": "Stepping Stones",
+      "categorie": "Stepping Stones",
+	  "sub_categorie": "to condense your insights",
 	  "logo": "icon-stepping-stones-nobg.svg",
       "color": "hsl(337, 96%, 62%)",
-	  "catcolor": "rgb(157, 147, 12)",
       "kaarten": [
         {
           "kaart": "Business Model Canvas",
@@ -344,11 +348,10 @@ var game = {
           "kaart": "Comparison Chart",
           "image": "step-comparison-chart.png"
         },
-		{
-          "kaart": "Customer Journey",
-          "image": "step-customer-journey.png"
+        {
+          "kaart": "Concept",
+          "image": "step-concept.png"
         },
-
         {
           "kaart": "Design Specification",
           "image": "step-design-specification.png"
@@ -356,15 +359,14 @@ var game = {
       ]
     },
     {
-      "categorie": "to communicate",
-	  "sub_categorie": "Stepping Stones",
+      "categorie": "Stepping Stones",
+	  "sub_categorie": "to communicate",
       "color": "hsl(337, 96%, 62%)",
 	  "logo": "icon-stepping-stones-nobg.svg",
-	  "catcolor": "rgb(27, 69, 136)",
       "kaarten": [
-		{
-          "kaart": "Concept",
-          "image": "step-concept.png"
+        {
+          "kaart": "Customer Journey",
+          "image": "step-customer-journey.png"
         },
         {
           "kaart": "Empathy Map",
@@ -379,7 +381,6 @@ var game = {
           "image": "step-moodboard.png"
         }
       ]
-    }/// aangepast Stepping Stones  v1.0
-
+    }
   ]
 }

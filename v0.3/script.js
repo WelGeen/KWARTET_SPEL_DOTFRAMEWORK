@@ -29,24 +29,20 @@ function createContainers() {
 		//console.log(i, containerDiv)
        
 	   var color = getRandomRGBColor(); //data[i].color;
-	   var catcolor = data[i].catcolor;
-	   //var catcolor = getRandomRGBColor();
 		for (var j = 0; j < data[i].kaarten.length; j++) {
 			var cardDiv = document.createElement('div');
 			cardDiv.className = 'card';
 			
-		// Content	
 			var contentDiv = document.createElement('div');
 			contentDiv.classList.add('content'); 
-			contentDiv.style.borderColor = catcolor;  
+			contentDiv.style.borderColor = color;  
 			//contentDiv.classList.add(data[i].classname); 
 			cardDiv.appendChild(contentDiv);
 			
-		// Categorie		
 			var Categorie = document.createElement('div');
 			Categorie.innerHTML = data[i].categorie;
 			Categorie.classList.add('categorie'); 
-			Categorie.style.backgroundColor = catcolor; 
+			Categorie.style.backgroundColor = color; 
 			//Categorie.style.backgroundImage = "url('"+image_root+data[i].logo+"')";
 			
 			var SubCategorie = document.createElement('div');
@@ -56,7 +52,7 @@ function createContainers() {
 			
 			contentDiv.appendChild(Categorie);
 			
-		// Icoon
+		// icoon
 			var iconDiv = document.createElement('div');
 			iconDiv.classList.add('icon'); 
 			iconDiv.style.backgroundColor = data[i].color; 
@@ -74,14 +70,7 @@ function createContainers() {
 				cardMethod.classList.add("method"); 
 				
 				if(data[i].kaarten[j].kaart == data[i].kaarten[k].kaart){
-					// Icoon
-					var iconDiv = document.createElement('div');
-					iconDiv.classList.add('icon-small'); 
-					iconDiv.style.backgroundColor = data[i].color; 
-					iconDiv.style.backgroundImage = "url('"+image_root+data[i].logo+"')";
-					cardMethod.appendChild(iconDiv);
-					
-					cardMethod.style.background = catcolor;
+					cardMethod.style.background = color;
 					cardMethod.style.fontWeight  = "bold";
 					cardMethod.style.color  = "white";
 				}			
