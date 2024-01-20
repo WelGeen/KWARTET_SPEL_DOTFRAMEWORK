@@ -22,6 +22,7 @@ Projectscope
 - DOT-framework integratie: Het framework wordt geïntegreerd in de spelregels en structuur, waardoor spelers bewust worden van de relatie tussen onderzoeksmethoden en ontwerp, organisatie en technologie.
 - 
 Voorbeelden
+https://welgeen.nl/dot-kwartet/v1/ 
 Stel je voor dat je een kwartetspel speelt op basis van CMD-methoden. Bijvoorbeeld: "Mag ik van jou van bibliotheek strategieën, het creëren van benchmarks?" of "Mag ik van jou van workshop strategieën, de persona's voor een ontwerpproject?".
 
 Bijdragen
